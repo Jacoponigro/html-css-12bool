@@ -5,19 +5,23 @@
 }
 .container , [class*="col-"]{
   border: 1px solid black;
-}
-[class*="col-"]{
-  height: 100%;
-  text-align: center;
-  position: relative;
   background-color: pink;
+}
+[class*="col-"] .nested{
+  background-color: lightcoral;
+  border: 1px solid white;
+  height: 100%;
 }
 [class*="col-"] > p{
   position: absolute;
   top: 50%;
   left:50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container .col-6{
+  padding: 5px;
 }
 .row{
-  height: 300px;
+  height: 200px;
 }

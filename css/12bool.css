@@ -11,6 +11,11 @@
   display: table;
   clear: both;
 }
+[class*="col-"]{
+  height: 200px;
+  float: left;
+  position: relative;
+}
 .col-1{
   width: calc(100% / 12);
 }
